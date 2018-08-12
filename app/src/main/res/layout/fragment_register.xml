@@ -1,38 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <!--Toolbar-->
-<include layout="@layout/toolbar_main"/>
+    <include
+        android:id="@+id/toolbarRegister"
+        layout="@layout/toolbar_main" />
 
 
     <!--content-->
-<LinearLayout
-    android:layout_marginTop="20dp"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <EditText
-        android:hint=":name: "
-        android:inputType="text"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_clear"
+        android:orientation="vertical">
 
-    <EditText
-        android:hint="@string/user"
-        android:inputType="text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfield_name"
+            android:hint="name: "
+            android:inputType="text"
+            android:textSize="@dimen/h2" />
 
-    <EditText
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfield_user"
+            android:hint="@string/user"
+            android:inputType="text"
+            android:textSize="@dimen/h2" />
 
-</LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfield_password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/h2" />
+
+    </LinearLayout>
 
 
 </LinearLayout>

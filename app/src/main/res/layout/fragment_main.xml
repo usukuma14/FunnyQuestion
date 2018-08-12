@@ -7,13 +7,16 @@
 
     <!--jjj-->
     <LinearLayout
-        android:layout_margin="20dp"
+        android:background="@drawable/bg_logo"
+        android:layout_margin="30dp"
           android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <!--user-->
         <EditText
+            android:textSize="@dimen/h2"
+            android:background="@drawable/textfield_user"
             android:inputType="text"
             android:hint="@string/user"
             android:layout_width="match_parent"
@@ -21,6 +24,8 @@
 
         <!--password-->
         <EditText
+            android:textSize="@dimen/h2"
+            android:background="@drawable/textfield_password"
             android:inputType="textPassword"
             android:hint="@string/password"
             android:layout_width="match_parent"
@@ -28,6 +33,7 @@
 
         <!--Login-->
         <Button
+            android:background="@drawable/bg_button"
             android:text="Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -35,10 +41,13 @@
 
         <!--new register-->
         <TextView
+            android:clickable="true"
+            android:id="@+id/txtRegister"
             android:textColor="@color/colorAccent"
             android:layout_marginTop="15dp"
             android:layout_gravity="center_horizontal"
-            android:textSize="14sp"
+
+            android:textSize="@dimen/h2"
             android:text="New Register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
