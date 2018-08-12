@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Funny Question</string>
-    <string name="user">User :</string>
+    <string name="user">Email :</string>
     <string name="password">Password :</string>
 </resources>
