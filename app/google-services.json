@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "424427434007",
+    "firebase_url": "https://funnyquestion-ee4f6.firebaseio.com",
+    "project_id": "funnyquestion-ee4f6",
+    "storage_bucket": "funnyquestion-ee4f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424427434007:android:ea754995fd588cc1",
+        "android_client_info": {
+          "package_name": "sukuma.uam.mail.pbru.ac.th.funnyquestion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424427434007-gnr0lv6ofie89uju3vqemg5ggtrb7g30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sukuma.uam.mail.pbru.ac.th.funnyquestion",
+            "certificate_hash": "3d95a66f888e3568eabe51af484c6656fb5553a9"
+          }
+        },
+        {
+          "client_id": "424427434007-vo7quijka1u63kemfeeu4geg50u6gm0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMIFilya1bFCNpmtHTC6SqpPNa6aygHRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424427434007-vo7quijka1u63kemfeeu4geg50u6gm0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
