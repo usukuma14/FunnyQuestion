@@ -32,7 +32,7 @@ public class MainFragment extends Fragment {
                 getActivity()
                         .getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.contentMainFragent, new ServiceFragment())
+                        .replace(R.id.contentMainFragent, new RegisterFragment())
                         .addToBackStack(null)
                         .commit();
             }
