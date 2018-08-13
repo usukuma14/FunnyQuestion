@@ -85,8 +85,7 @@ public class MainFragment extends Fragment {
                         } else {
                             progressDialog.dismiss();
                             MyAlertDialog myAlertDialog = new MyAlertDialog(getActivity());
-                            myAlertDialog.normalDialog("Cannot Authen");
-                            task.getException().getMessage();
+                            myAlertDialog.normalDialog("Cannot Auten",task.getException().getMessage());
 
                         }
                     }
