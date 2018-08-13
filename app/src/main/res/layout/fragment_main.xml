@@ -15,15 +15,18 @@
 
         <!--user-->
         <EditText
+            android:id="@+id/edtEmail"
+
             android:textSize="@dimen/h2"
             android:background="@drawable/textfield_user"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:hint="@string/user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--password-->
         <EditText
+            android:id="@+id/editPassword"
             android:textSize="@dimen/h2"
             android:background="@drawable/textfield_password"
             android:inputType="textPassword"
@@ -33,6 +36,8 @@
 
         <!--Login-->
         <Button
+
+            android:id="@+id/btnlogin"
             android:background="@drawable/bg_button"
             android:text="Login"
             android:layout_width="match_parent"
