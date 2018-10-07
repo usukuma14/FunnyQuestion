@@ -16,11 +16,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import sukuma.uam.mail.pbru.ac.th.funnyquestion.fragment.ServiceFragment;
+import sukuma.uam.mail.pbru.ac.th.funnyquestion.fragment.Unit1Fragment;
 
 
 public class ServiceActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private String nameUserStringString;
+    private String nameUserStringString, uidUserString;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
 
@@ -42,8 +43,19 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
 //        Unit Controllor
         unitControllor();
 
+         //Add Fragment
+        addFragment(savedInstanceState);
 
     } //Main Method
+
+    private void addFragment(Bundle savedInstanceState) {
+        if (savedInstanceState == null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.contentServiceFragment, Unit1Fragment.unit1Instance(uidUserString))
+                    .commit();
+        }
+    }
 
     private void unitControllor() {
         unit1TextView = findViewById(R.id.txtUnit1);
@@ -110,6 +122,8 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         nameUserStringString = firebaseUser.getDisplayName();
+        uidUserString = firebaseUser.getUid();
+
 
     }
 
@@ -142,30 +156,36 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
 
         switch (v.getId()) {
             case R.id.txtUnit1:
-                index = 0;
+
+
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentServiceFragment, Unit1Fragment.unit1Instance(uidUserString))
+                        .commit();
+
+
+
+
                 break;
             case R.id.txtUnit2:
-                index = 1;
+
                 break;
             case R.id.txtUnit3:
-                index = 2;
+
                 break;
             case R.id.txtUnit4:
-                index = 3;
+
                 break;
             case R.id.txtUnit5:
-                index = 4;
+
                 break;
             case R.id.txtUnit6:
-                index = 5;
+
                 break;
 
         }
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.contentServiceFragment, ServiceFragment.serviceInstance(index))
-                .commit();
+
 
 
     }//onClick
