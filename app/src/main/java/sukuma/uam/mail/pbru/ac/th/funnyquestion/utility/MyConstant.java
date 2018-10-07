@@ -2,6 +2,17 @@ package sukuma.uam.mail.pbru.ac.th.funnyquestion.utility;
 
 public class MyConstant {
 
+//    item
+
+    private String[] choiceSpinnerItemStrings = new String[]{
+            "????",
+            "Game Consoles",
+            "webcam",
+            "CPU",
+            "external drive",
+            "speaker",
+            "Keyboard"};
+
     //    Choice Spinner1
     private String[] choiceSpinner1Strings = new String[]{
             "1) .........................",
@@ -86,6 +97,14 @@ public class MyConstant {
     };
     //getter
 
+
+    public String[] getChoiceSpinnerItemStrings() {
+        return choiceSpinnerItemStrings;
+    }
+
+    public String[] getChoiceSpinner4Strings() {
+        return choiceSpinner4Strings;
+    }
 
     public String[] getChoiceSpinner1Strings() {
         return choiceSpinner1Strings;
