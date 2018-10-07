@@ -6,7 +6,9 @@
     <!--Content-->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,9 +77,9 @@
 
             <Spinner
                 android:id="@+id/spinner1"
-                android:layout_marginTop="@dimen/padding8"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8" />
 
             <Spinner
                 android:id="@+id/spinner2"
@@ -99,11 +101,116 @@
                 android:text="3. What are the components of a computer?"
                 android:textSize="@dimen/h2"
                 android:textStyle="bold" />
-            <Spinner
-                android:layout_margin="@dimen/padding8"
-                android:id="@+id/spinner4"
+
+            <EditText
+                android:id="@+id/edtAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="text" />
+
+            <!--Presentation-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Presentation"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="The components of a computer"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="are Input devices, Output devices,  System unit, Storage devices and Communication devices."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="Input"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is any data and instruction entered into the memory of a computer. As shown in Figure below, people have a variety of options for entering data and instructions into a computer."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:src="@drawable/device1"
+                android:layout_margin="@dimen/padding"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <ImageView
+                android:src="@drawable/device2"
+                android:layout_margin="@dimen/padding"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <!--Practice-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Practice"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="1. What are the components of a computer?"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_marginTop="@dimen/padding8"
+                android:focusable="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+            <EditText
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="2. What does CPU stand for?"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
 
 
         </LinearLayout>

@@ -73,7 +73,7 @@ public class MyConstant {
             "System unit",
             "system unit",
             "System Unit",
-            "Buy things"};
+            "Input Devices"};
 
 
     private String[] unitTitleString = new String[]{
