@@ -45,8 +45,35 @@ public class MyConstant {
             "Buy things"
 
     };
-    private String[] choiceSpinner3Strings = new String[]{};
+    private String[] choiceSpinner3Strings = new String[]{
+            "3)..........................",
+            "To shop online",
+            "xxx",
+            "Shopping online",
+            "xxx",
+            "Online shopping",
+            "xxx",
+            "Buying things",
+            "xxx",
+            "To buy things",
+            "xxx",
+            "xxx",
+            "Buy things"};
 
+    private String[] choiceSpinner4Strings = new String[]{
+            "..........................",
+            "Input devices",
+            "Input device",
+            "input devices",
+            "input device",
+            "Output devices",
+            "Output device",
+            "output devices",
+            "output device",
+            "System unit",
+            "system unit",
+            "System Unit",
+            "Buy things"};
 
 
     private String[] unitTitleString = new String[]{
